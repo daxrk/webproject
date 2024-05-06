@@ -140,5 +140,23 @@
   <li>Egypt</li>
 </div>
 </footer>
+    <script>
+      document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+document.addEventListener('keydown', function(e) {
+    // يمنع فتح نافذة الفحص باستخدام مفتاحي Ctrl+Shift+I
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+    }
+
+    // يمنع فتح مصدر صفحة الويب باستخدام مفتاحي Ctrl+U
+    if (e.ctrlKey && e.key === 'U') {
+        e.preventDefault();
+    }
+});
+
+    </script>
   </body>
 </html>
