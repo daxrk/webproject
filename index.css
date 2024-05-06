@@ -51,6 +51,7 @@ padding: 78px 116px;
   margin: 7px 6px;
   position: relative;
   overflow: hidden;
+  
 }
 #photo1 {
   position: absolute;
@@ -63,6 +64,8 @@ top: 20px
   display: inline-block;
   line-height: 50px;
   margin-top: 16px;
+  z-index: 9;
+position: relative;
 }
 
 #logo-bar input {
